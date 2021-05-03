@@ -232,8 +232,9 @@ artists[8].name = 'Vincent Van Gogh';
   index 0 is Amedeo Modigliani`. */
 
 function getArtistByIndex(array, num) {
- return "The artist at index " + num + " is" + name
-getArtistByIndex(artists, 8);
+ 
+ return "The artist at index " + num + " is" + array[num].name
+getArtistByIndex(artists, 4);
 
 //still  need to fix name
 
@@ -318,12 +319,13 @@ lotsOfArt(artists)*/
 function lotsOfArt(array){
   let newArray = []
   for(i = 0; i < array.length; i++){
-    if(array.paintings[i] >= 100){
-        newArray.push()
+    if(array[i].paintings >= 1000){
+        newArray.push(array[i].name)
     }
-  }
-  return newArray;
+  }return newArray;
+
 lotsOfArt(artists);
+}
 
 
 // 🎨🎨 STRETCH 🎨🎨//
